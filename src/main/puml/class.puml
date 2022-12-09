@@ -1,0 +1,9 @@
+@startuml
+title "Classes to program: calculator"
+/'Программа реализует основной функционал обычного калькулятора'/
+class Runner /'Запускает программу на выполнение'/
+class SwingFace /'Реализация графического интерфейса'/
+class ConsoleFace /'Реализация консольного интерфейса'/
+class Calculator /'Хранит данные о запросах пользователя'/
+
+@enduml

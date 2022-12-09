@@ -1,0 +1,13 @@
+@startuml
+title "Usecase: Scripting"
+left to right direction
+actor "Пользователь" as user
+usecase "Калькулятор" as program
+user -> program : "Целые числа"
+user -> program : "Дробные числа" /'.'/
+user -> program : "Сбрасывать значения" /'С'/
+user -> program : "Указывать математические операции" /'+-*'/
+user -> program : "Запрашивать расчет переданного выражения" /'='/
+user <-down- program : "Показывать текущее поле" /''/
+user <-down- program : "Показывать результат вычислений" /''/
+@enduml
