@@ -41,6 +41,10 @@ public class Calculate {
                 this.operation = Operation.EQUALY;
                 break;
             default:
+                /**
+                 * добавить проверку на случй введенных данных отличных от цифр и "."
+                 * в случае ввода с графического интерфейса - не обязательно
+                 */
                 input.append(value);
         }
         

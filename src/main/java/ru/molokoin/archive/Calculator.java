@@ -1,7 +1,6 @@
 package ru.molokoin.archive;
 
 import ru.molokoin.Operation;
-import ru.molokoin.WrongOperationTypeException;
 
 /**
  * Класс хранит данные введенные пользователем и по запросу формирует ответ

@@ -68,14 +68,53 @@ public class SwingFace extends JFrame {
             /**
              * обработка нажатия кнопки "+"
              */
+            field.setText("");
             calculator.input("+");
 
         });
         subtractBtn = new JButton("-");
+        subtractBtn.addActionListener(e -> {
+            /**
+             * обработка нажатия кнопки "-"
+             */
+            field.setText("");
+            calculator.input("-");
+
+        });
         multiplyBtn = new JButton("*");
+        multiplyBtn.addActionListener(e -> {
+            /**
+             * обработка нажатия кнопки "*"
+             */
+            field.setText("");
+            calculator.input("*");
+
+        });
         divideBtn = new JButton("/");
+        divideBtn.addActionListener(e -> {
+            /**
+             * обработка нажатия кнопки "/"
+             */
+            field.setText("");
+            calculator.input("/");
+
+        });
         dotBtn = new JButton(".");
+        dotBtn.addActionListener(e ->{
+            /**
+             * обработка нажатия кнопки "."
+             * - добавляем в текстовое поле единичку
+             */
+            field.setText(field.getText() + ".");
+        });
         clearBtn = new JButton("C");
+        clearBtn.addActionListener(e ->{
+            /**
+             * обработка нажатия кнопки "C"
+             * - добавляем в текстовое поле единичку
+             */
+            field.setText("");
+        });
         oneBtn = new JButton("1");
         oneBtn.addActionListener(e ->{
             /**
@@ -85,14 +124,77 @@ public class SwingFace extends JFrame {
             field.setText(field.getText() + "1");
         });
         twoBtn = new JButton("2");
+        twoBtn.addActionListener(e ->{
+            /**
+             * обработка нажатия кнопки "2"
+             * - добавляем в текстовое поле единичку
+             */
+            field.setText(field.getText() + "2");
+        });
         threeBtn = new JButton("3");
+        threeBtn.addActionListener(e ->{
+            /**
+             * обработка нажатия кнопки "3"
+             * - добавляем в текстовое поле единичку
+             */
+            field.setText(field.getText() + "3");
+        });
         fourBtn = new JButton("4");
+        fourBtn.addActionListener(e ->{
+            /**
+             * обработка нажатия кнопки "4"
+             * - добавляем в текстовое поле единичку
+             */
+            field.setText(field.getText() + "4");
+        });
         fiveBtn = new JButton("5");
+        fiveBtn.addActionListener(e ->{
+            /**
+             * обработка нажатия кнопки "5"
+             * - добавляем в текстовое поле единичку
+             */
+            field.setText(field.getText() + "5");
+        });
         sixBtn = new JButton("6");
+        sixBtn.addActionListener(e ->{
+            /**
+             * обработка нажатия кнопки "6"
+             * - добавляем в текстовое поле единичку
+             */
+            field.setText(field.getText() + "6");
+        });
         sevenBtn = new JButton("7");
+        sevenBtn.addActionListener(e ->{
+            /**
+             * обработка нажатия кнопки "7"
+             * - добавляем в текстовое поле единичку
+             */
+            field.setText(field.getText() + "7");
+        });
         eightBtn = new JButton("8");
+        eightBtn.addActionListener(e ->{
+            /**
+             * обработка нажатия кнопки "8"
+             * - добавляем в текстовое поле единичку
+             */
+            field.setText(field.getText() + "8");
+        });
         nineBtn = new JButton("9");
+        nineBtn.addActionListener(e ->{
+            /**
+             * обработка нажатия кнопки "9"
+             * - добавляем в текстовое поле единичку
+             */
+            field.setText(field.getText() + "9");
+        });
         zeroBtn = new JButton("0");
+        zeroBtn.addActionListener(e ->{
+            /**
+             * обработка нажатия кнопки "0"
+             * - добавляем в текстовое поле единичку
+             */
+            field.setText(field.getText() + "0");
+        });
         
         //создание центральной панели
         centerpane = new JPanel();

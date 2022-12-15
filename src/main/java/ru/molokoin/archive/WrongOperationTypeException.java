@@ -1,4 +1,4 @@
-package ru.molokoin;
+package ru.molokoin.archive;
 
 public class WrongOperationTypeException extends Exception{
 }

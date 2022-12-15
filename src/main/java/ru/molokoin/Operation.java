@@ -1,5 +1,7 @@
 package ru.molokoin;
 
+import ru.molokoin.archive.WrongOperationTypeException;
+
 public enum Operation {
     SUMM ("+") {
         @Override
