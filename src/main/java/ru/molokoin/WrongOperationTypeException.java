@@ -1,4 +1,4 @@
-package main.java.ru.molokoin;
+package ru.molokoin;
 
 public class WrongOperationTypeException extends Exception{
 }

@@ -1,4 +1,4 @@
-package main.java.ru.molokoin;
+package ru.molokoin.archive;
 
 /**
  * Интерфейс предоставляет инструментарий

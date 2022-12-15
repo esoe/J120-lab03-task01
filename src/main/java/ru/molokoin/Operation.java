@@ -1,4 +1,4 @@
-package main.java.ru.molokoin;
+package ru.molokoin;
 
 public enum Operation {
     SUMM ("+") {
@@ -29,6 +29,12 @@ public enum Operation {
         @Override
         public Double perform(Double result, Double current)  {
             return result;
+        }
+    },
+    CLEAR ("c") {
+        @Override
+        public Double perform(Double result, Double current)  {
+            return 0.0;
         }
     },
     NOT_SUPORTED("") {
