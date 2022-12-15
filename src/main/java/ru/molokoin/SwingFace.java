@@ -106,6 +106,7 @@ public class SwingFace extends JFrame {
              * - добавляем в текстовое поле единичку
              */
             field.setText(field.getText() + ".");
+            calculator.input(".");
         });
         clearBtn = new JButton("C");
         clearBtn.addActionListener(e ->{
@@ -114,6 +115,7 @@ public class SwingFace extends JFrame {
              * - добавляем в текстовое поле единичку
              */
             field.setText("");
+            calculator.input("c");
         });
         oneBtn = new JButton("1");
         oneBtn.addActionListener(e ->{
@@ -122,6 +124,7 @@ public class SwingFace extends JFrame {
              * - добавляем в текстовое поле единичку
              */
             field.setText(field.getText() + "1");
+            calculator.input("1");
         });
         twoBtn = new JButton("2");
         twoBtn.addActionListener(e ->{
@@ -130,6 +133,7 @@ public class SwingFace extends JFrame {
              * - добавляем в текстовое поле единичку
              */
             field.setText(field.getText() + "2");
+            calculator.input("2");
         });
         threeBtn = new JButton("3");
         threeBtn.addActionListener(e ->{
@@ -138,6 +142,7 @@ public class SwingFace extends JFrame {
              * - добавляем в текстовое поле единичку
              */
             field.setText(field.getText() + "3");
+            calculator.input("3");
         });
         fourBtn = new JButton("4");
         fourBtn.addActionListener(e ->{
@@ -146,6 +151,7 @@ public class SwingFace extends JFrame {
              * - добавляем в текстовое поле единичку
              */
             field.setText(field.getText() + "4");
+            calculator.input("4");
         });
         fiveBtn = new JButton("5");
         fiveBtn.addActionListener(e ->{
@@ -154,6 +160,7 @@ public class SwingFace extends JFrame {
              * - добавляем в текстовое поле единичку
              */
             field.setText(field.getText() + "5");
+            calculator.input("5");
         });
         sixBtn = new JButton("6");
         sixBtn.addActionListener(e ->{
@@ -162,6 +169,7 @@ public class SwingFace extends JFrame {
              * - добавляем в текстовое поле единичку
              */
             field.setText(field.getText() + "6");
+            calculator.input("6");
         });
         sevenBtn = new JButton("7");
         sevenBtn.addActionListener(e ->{
@@ -170,6 +178,7 @@ public class SwingFace extends JFrame {
              * - добавляем в текстовое поле единичку
              */
             field.setText(field.getText() + "7");
+            calculator.input("7");
         });
         eightBtn = new JButton("8");
         eightBtn.addActionListener(e ->{
@@ -178,6 +187,7 @@ public class SwingFace extends JFrame {
              * - добавляем в текстовое поле единичку
              */
             field.setText(field.getText() + "8");
+            calculator.input("8");
         });
         nineBtn = new JButton("9");
         nineBtn.addActionListener(e ->{
@@ -186,6 +196,7 @@ public class SwingFace extends JFrame {
              * - добавляем в текстовое поле единичку
              */
             field.setText(field.getText() + "9");
+            calculator.input("9");
         });
         zeroBtn = new JButton("0");
         zeroBtn.addActionListener(e ->{
@@ -194,6 +205,7 @@ public class SwingFace extends JFrame {
              * - добавляем в текстовое поле единичку
              */
             field.setText(field.getText() + "0");
+            calculator.input("0");
         });
         
         //создание центральной панели
