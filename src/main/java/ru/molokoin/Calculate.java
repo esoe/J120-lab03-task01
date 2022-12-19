@@ -27,18 +27,25 @@ public class Calculate {
             case SUMM:
                 this.operation = Operation.SUMM;
                 System.out.println("Выполняем: Operation.SUMM");
+                //memory = memory + Double.valueOf(input.toString());
                 break;
             case SUBTRACT:
                 this.operation = Operation.SUBTRACT;
+                //memory = memory - Double.valueOf(input.toString());
                 break;
             case MULTIPLY:
                 this.operation = Operation.MULTIPLY;
+                //memory = memory * Double.valueOf(input.toString());
                 break;
             case DIVIDE:
                 this.operation = Operation.DIVIDE;
+                //memory = memory / Double.valueOf(input.toString());
                 break;
             case EQUALY:
                 this.operation = Operation.EQUALY;
+                break;
+            case CLEAR:
+                this.operation = Operation.CLEAR;
                 break;
             default:
                 /**

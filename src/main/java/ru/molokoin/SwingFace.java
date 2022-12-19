@@ -236,7 +236,7 @@ public class SwingFace extends JFrame {
     private void initSouthpane() {
         equalityBtn = new JButton("=");
         equalityBtn.addActionListener(e -> {
-            //
+            field.setText(String.valueOf(calculator.memory));
         });
         southpane = new JPanel();
         southpane.setLayout(new BorderLayout());
