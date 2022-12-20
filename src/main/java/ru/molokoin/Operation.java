@@ -30,6 +30,7 @@ public enum Operation {
     EQUALY ("=") {
         @Override
         public Double perform(Double result, Double current)  {
+            //
             return result;
         }
     },

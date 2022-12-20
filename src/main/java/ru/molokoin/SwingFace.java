@@ -10,6 +10,8 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
+import ru.molokoin.archive.WrongOperationTypeException;
+
 public class SwingFace extends JFrame {
     private Calculate calculator;
     private Container mainpane;
@@ -68,9 +70,9 @@ public class SwingFace extends JFrame {
             /**
              * обработка нажатия кнопки "+"
              */
-            field.setText("");
             calculator.input("+");
-
+            field.setText("");
+            
         });
         subtractBtn = new JButton("-");
         subtractBtn.addActionListener(e -> {
@@ -236,7 +238,14 @@ public class SwingFace extends JFrame {
     private void initSouthpane() {
         equalityBtn = new JButton("=");
         equalityBtn.addActionListener(e -> {
+            try {
+                calculator.memory = calculator.operation.perform(calculator.memory, Double.valueOf(calculator.input.toString()));
+            } catch (NumberFormatException | WrongOperationTypeException ex) {
+                System.out.println("Ошибька:" + ex.getMessage());
+                ex.printStackTrace();
+            }
             field.setText(String.valueOf(calculator.memory));
+            
         });
         southpane = new JPanel();
         southpane.setLayout(new BorderLayout());

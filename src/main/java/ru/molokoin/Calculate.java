@@ -1,5 +1,7 @@
 package ru.molokoin;
 
+import ru.molokoin.archive.WrongOperationTypeException;
+
 public class Calculate {
     public StringBuilder input;//что отображается на дисплее, передается для показа пользователю
     public Double memory;//что хранится в памяти
@@ -25,9 +27,15 @@ public class Calculate {
          */
         switch (Operation.fromValue(value)) {
             case SUMM:
-                this.operation = Operation.SUMM;
                 System.out.println("Выполняем: Operation.SUMM");
-                //memory = memory + Double.valueOf(input.toString());
+                try {
+                    memory = operation.perform(memory, Double.valueOf(input.toString()));
+                } catch (NumberFormatException | WrongOperationTypeException e) {
+                    System.out.println("Ошибка приведения данных: " + e.getMessage());
+                    e.printStackTrace();
+                }
+                this.operation = Operation.SUMM;
+                input = new StringBuilder();
                 break;
             case SUBTRACT:
                 this.operation = Operation.SUBTRACT;
@@ -43,6 +51,7 @@ public class Calculate {
                 break;
             case EQUALY:
                 this.operation = Operation.EQUALY;
+                //
                 break;
             case CLEAR:
                 this.operation = Operation.CLEAR;
@@ -54,7 +63,5 @@ public class Calculate {
                  */
                 input.append(value);
         }
-        
     }
-
 }
