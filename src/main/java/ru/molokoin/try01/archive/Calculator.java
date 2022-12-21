@@ -1,4 +1,6 @@
-package main.java.ru.molokoin;
+package ru.molokoin.try01.archive;
+
+import ru.molokoin.try01.Operation;
 
 /**
  * Класс хранит данные введенные пользователем и по запросу формирует ответ
@@ -8,9 +10,9 @@ package main.java.ru.molokoin;
  * 3. Храниться может только уже вычисленное значение и наименование следующей операции
  */
 public class Calculator implements iCalculator{
-    private Double resultValue;//результат проведенных вычислений
-    private Double currentValue;
-    private Operation operation;//текущая операция
+    public Double resultValue;//результат проведенных вычислений
+    public Double currentValue;
+    public Operation operation;//текущая операция
     public Calculator (){
         /**
          * Первой операцией прибавляем к нулю введенное пользователем число,
@@ -71,6 +73,9 @@ public class Calculator implements iCalculator{
                 break;
             case DIVIDE:
                 this.operation = Operation.SUMM;
+                break;
+            case EQUALY:
+                this.operation = Operation.EQUALY;
                 break;
             default:
                 throw new WrongOperationTypeException();

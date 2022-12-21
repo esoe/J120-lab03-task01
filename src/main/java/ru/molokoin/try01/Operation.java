@@ -1,4 +1,6 @@
-package main.java.ru.molokoin;
+package ru.molokoin.try01;
+
+import ru.molokoin.try01.archive.WrongOperationTypeException;
 
 public enum Operation {
     SUMM ("+") {
@@ -28,7 +30,14 @@ public enum Operation {
     EQUALY ("=") {
         @Override
         public Double perform(Double result, Double current)  {
+            //
             return result;
+        }
+    },
+    CLEAR ("c") {
+        @Override
+        public Double perform(Double result, Double current)  {
+            return 0.0;
         }
     },
     NOT_SUPORTED("") {

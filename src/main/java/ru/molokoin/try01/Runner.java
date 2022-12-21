@@ -1,14 +1,14 @@
-package main.java.ru.molokoin;
+package ru.molokoin.try01;
 
 public class Runner {
-    Calculator calculator;
+    Calculate calculator;
     SwingFace mainframe;
     public Runner(){
         init();
     }
     public void init(){
-        mainframe = new SwingFace();
-        calculator = new Calculator();
+        calculator = new Calculate();
+        mainframe = new SwingFace(calculator);
     }
 
     public static void main(String[] args) {
