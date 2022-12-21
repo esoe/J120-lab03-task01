@@ -1,4 +1,4 @@
-package ru.molokoin;
+package ru.molokoin.try01;
 
 
 import java.awt.Container;
@@ -10,7 +10,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-import ru.molokoin.archive.WrongOperationTypeException;
+import ru.molokoin.try01.archive.WrongOperationTypeException;
 
 public class SwingFace extends JFrame {
     private Calculate calculator;

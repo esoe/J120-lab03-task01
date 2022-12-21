@@ -1,4 +1,4 @@
-package ru.molokoin;
+package ru.molokoin.try01;
 
 public class Runner {
     Calculate calculator;

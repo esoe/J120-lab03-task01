@@ -1,6 +1,6 @@
-package ru.molokoin.archive;
+package ru.molokoin.try01.archive;
 
-import ru.molokoin.Operation;
+import ru.molokoin.try01.Operation;
 
 /**
  * Класс хранит данные введенные пользователем и по запросу формирует ответ

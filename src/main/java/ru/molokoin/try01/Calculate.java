@@ -1,6 +1,6 @@
-package ru.molokoin;
+package ru.molokoin.try01;
 
-import ru.molokoin.archive.WrongOperationTypeException;
+import ru.molokoin.try01.archive.WrongOperationTypeException;
 
 public class Calculate {
     public StringBuilder input;//что отображается на дисплее, передается для показа пользователю
